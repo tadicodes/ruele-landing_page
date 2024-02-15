@@ -1,0 +1,485 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: myHeadingFont;
+    src: url(fonts/horizon.otf);
+  }
+
+  @font-face {
+    font-family: myNormalFont;
+    src: url(fonts/belleza.ttf)
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: myNormalFont
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: myHeadingFont;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .search-container form {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 5px;
+  }
+
+  .search-container input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 17px;
+    color: white;
+    padding: 5px 5px;
+  }
+
+  ::placeholder {
+    color: #fff;
+    font-family: myNormalFont;
+    font-size: large;
+  }
+
+  .search-container button img {
+    width: 20px;
+  }
+
+  .search-container button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: grey;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    margin: auto;
+    width: 50%;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  /* Hero Section Styles */
+
+  body, html {
+    height: 100%;
+}
+
+  .hero-image {
+    background-image: url(images/hero.png);
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  
+  .hero-text h1 {
+    font-family: myHeadingFont;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .hero-text button {
+    font-family: myNormalFont;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-text button:hover {
+    background-color: grey;
+  }
+  
+  /* Introduction Section Styles */
+  .introduction {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .introduction h1 {
+    font-family: myHeadingFont;
+    font-size: xx-large;
+  }
+
+  .introduction .row {
+    align-items: center;
+    padding: 50px 50px;
+  }
+
+  .introduction img {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+  }
+
+  .introduction p {
+    font-family: myNormalFont;
+    font-size: x-large;
+  }
+
+  .introduction button {
+    font-family: myNormalFont;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .introduction button:hover {
+    background-color: grey;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 50%;
+    padding: 10px;
+  }
+  
+  /* App Features Section Styles */
+  .carousel-item {
+    height: 36rem;
+    background-position: center;
+    background-size: cover;
+    background: #000;
+  }
+
+  #myCarousel h1 {
+    font-family: myHeadingFont;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .carousel-inner .container h1 {
+    font-family: myHeadingFont;
+  }
+
+  .carousel-inner .container p {
+    font-family: myNormalFont;
+    font-size: x-large;
+  }
+
+  .carousel-inner button {
+    font-family: myNormalFont;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-inner button:hover {
+    background-color: grey;
+  }
+
+  .overlay-image {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  
+  /* Search Bar Section Styles */
+  .search-bar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .search-bar h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Footer Section Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+  .socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+  }
+
+  .socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+  }
+
+  .socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  body {
+    background-color: grey;
+    font-family: myNormalFont;
+  }
+  
+  .signup-box {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .login-box {
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  .login-box form {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .signup-box form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .signup-box input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+  }
+
+  .login-box input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color: black;
+  }
+
+
+
+.reg{
+    padding:50px;
+}
+.reg .container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.reg .form-group{
+    margin-bottom:30px;
+}
